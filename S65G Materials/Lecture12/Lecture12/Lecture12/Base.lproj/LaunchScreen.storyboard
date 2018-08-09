@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Example-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKt-pD-dWv">
+                                <rect key="frame" x="0.0" y="32" width="667" height="303"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEO-LR-iAO">
+                                        <rect key="frame" x="212" y="30.5" width="242" height="242"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="oEO-LR-iAO" secondAttribute="height" multiplier="1:1" id="GW9-Nk-LsM"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.89263237849999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="oEO-LR-iAO" firstAttribute="height" secondItem="dKt-pD-dWv" secondAttribute="height" multiplier="0.8" priority="750" id="6X2-DP-9Vf"/>
+                                    <constraint firstItem="oEO-LR-iAO" firstAttribute="width" relation="lessThanOrEqual" secondItem="dKt-pD-dWv" secondAttribute="width" multiplier="0.8" id="E1U-NR-Mjt"/>
+                                    <constraint firstItem="oEO-LR-iAO" firstAttribute="centerY" secondItem="dKt-pD-dWv" secondAttribute="centerY" id="Ipo-VI-ra3"/>
+                                    <constraint firstItem="oEO-LR-iAO" firstAttribute="height" relation="lessThanOrEqual" secondItem="dKt-pD-dWv" secondAttribute="height" multiplier="0.8" id="J9m-tS-ZRU"/>
+                                    <constraint firstItem="oEO-LR-iAO" firstAttribute="centerX" secondItem="dKt-pD-dWv" secondAttribute="centerX" id="QfP-FI-4hz"/>
+                                    <constraint firstItem="oEO-LR-iAO" firstAttribute="width" secondItem="dKt-pD-dWv" secondAttribute="width" multiplier="0.8" priority="750" id="rGV-So-4jw"/>
+                                </constraints>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JdS-cu-JqR">
+                                <rect key="frame" x="0.0" y="335" width="667" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6Rk-IA-tJ7"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Item" id="9eO-p8-tEg"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dKt-pD-dWv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9xQ-eT-Vbh"/>
+                            <constraint firstItem="dKt-pD-dWv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="D4a-wX-6bQ"/>
+                            <constraint firstItem="JdS-cu-JqR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="F8h-g6-Ell"/>
+                            <constraint firstItem="dKt-pD-dWv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="IGy-do-kxu"/>
+                            <constraint firstItem="JdS-cu-JqR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aAt-TX-0sR"/>
+                            <constraint firstItem="JdS-cu-JqR" firstAttribute="top" secondItem="dKt-pD-dWv" secondAttribute="bottom" id="dSQ-j9-etS"/>
+                            <constraint firstItem="JdS-cu-JqR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="l7P-57-eFH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Example" id="lcl-Tu-hHd">
+                        <barButtonItem key="rightBarButtonItem" title="+" id="LGV-1i-noM"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+</document>
